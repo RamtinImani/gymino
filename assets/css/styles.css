@@ -98,3 +98,64 @@ img {
   max-width: 100%;
   height: auto;
 }
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1124px;
+  padding-inline: 2.4rem;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 7rem 0 3rem;
+}
+
+.section__data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.section__title,
+.section__title-border {
+  font-size: var(--big-font-size);
+  letter-spacing: 1.5px;
+}
+
+.section__subtitle {
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: var(--first-color);
+  transform: rotate(-2deg);
+}
+
+.section__titles {
+  display: flex;
+  column-gap: 1.2rem;
+  justify-content: center;
+}
+
+.section__title-border {
+  -webkit-text-stroke: 1px var(--text-color);
+  color: transparent;
+}
+
+.grid {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+.color-red {
+  color: hsl(0, 80%, 64%);
+}
+
+.color-green {
+  color: var(--first-color);
+}
