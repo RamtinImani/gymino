@@ -300,3 +300,30 @@ img {
   width: 30.5rem;
   background-color: var(--first-color-dark);
 }
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-block;
+  padding: 2rem 3rem;
+  background-color: var(--first-color);
+  border: 2px solid var(--first-color-light);
+  color: var(--title-color-black);
+  font-weight: var(--font-bold);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+.button i {
+  font-size: 2rem;
+  transition: transform 0.3s;
+}
+.button__flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+.button__flex:hover i {
+  transform: translateX(0.5rem);
+}
