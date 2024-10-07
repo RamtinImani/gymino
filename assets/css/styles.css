@@ -401,3 +401,64 @@ img {
 .program__card:hover .program__button {
   opacity: 1;
 }
+/*=============== CHOOSE ===============*/
+.choose {
+  padding-bottom: 0;
+}
+.choose__overflow {
+  position: relative;
+}
+.choose__container {
+  row-gap: 5rem;
+}
+.choose__content,
+.choose__data {
+  margin-bottom: 3rem;
+}
+.choose__description {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.choose__data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3rem;
+}
+.choose__group {
+  text-align: center;
+}
+.choose__number {
+  font-size: var(--h1-font-size);
+  font-family: var(--second-font);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.choose__subtitle {
+  font-size: var(--small-font-size);
+}
+.choose__img {
+  width: 26rem;
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+.choose__triangle {
+  height: 32.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+.choose__triangle-1 {
+  width: 30.5rem;
+  background-color: var(--first-color);
+}
+.choose__triangle-2 {
+  width: 20.5rem;
+  background-color: var(--first-color-alt);
+}
+.choose__triangle-3 {
+  width: 10.5rem;
+  background-color: var(--first-color-dark);
+}
