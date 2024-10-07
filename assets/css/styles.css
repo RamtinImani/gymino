@@ -336,3 +336,68 @@ img {
 .logos__img {
   width: 12rem;
 }
+/*=============== PROGRAM ===============*/
+.program__container {
+  grid-template-columns: 22rem;
+  justify-content: center;
+  row-gap: 3rem;
+}
+.program__card {
+  display: grid;
+  background-color: hsla(79, 6%, 64%, 0.07);
+  padding: 2.5rem 3rem;
+  border: 2px solid transparent;
+  transition: background 0.3s, border 0.4s;
+}
+.program__shape {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--first-color-gray);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: background 0.5s;
+}
+.program__img {
+  width: 4rem;
+}
+.program__title {
+  font-size: var(--h3-font-size);
+  margin: 1.5rem 0;
+  transition: color 0.5s;
+}
+.program__description {
+  font-size: var(--small-font-size);
+  letter-spacing: 0.5px;
+  line-height: 150%;
+  transition: color 0.5s;
+}
+.program__button {
+  justify-self: flex-end;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  color: var(--title-color-black);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.program__button i {
+  display: block;
+  transition: transform 0.3s;
+}
+.program__button:hover i {
+  transform: translateX(0.5rem);
+}
+.program__card:hover {
+  background-color: var(--first-color);
+  border: 2px solid var(--first-color-light);
+}
+.program__card:hover .program__shape {
+  background-color: var(--first-color-light);
+}
+.program__card:hover .program__title,
+.program__card:hover .program__description {
+  color: var(--title-color-black);
+}
+.program__card:hover .program__button {
+  opacity: 1;
+}
