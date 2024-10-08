@@ -462,3 +462,77 @@ img {
   width: 10.5rem;
   background-color: var(--first-color-dark);
 }
+/*=============== PRICING ===============*/
+.pricing__container {
+  grid-template-columns: 28rem;
+  justify-content: center;
+  row-gap: 3rem;
+}
+.pricing__card,
+.pricing__shape,
+.pricing__list {
+  display: grid;
+}
+.pricing__card {
+  row-gap: 3rem;
+  background-color: hsla(79, 6%, 64%, 0.07);
+  padding: 3rem 4rem;
+}
+/* .pricing__header {
+} */
+.pricing__shape {
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--first-color-gray);
+  border-radius: 50%;
+  place-items: center;
+  margin-bottom: 1.5rem;
+}
+.pricing__img {
+  width: 3.5rem;
+}
+.pricing__title {
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+.pricing__number {
+  font-size: var(--h1-font-size);
+}
+.pricing__list {
+  row-gap: 1.5rem;
+}
+.pricing__item {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  font-size: var(--small-font-size);
+}
+.pricing__item i {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+.pricing__item-opacity {
+  opacity: 0.3;
+}
+.pricing__button {
+  background-color: var(--title-color);
+}
+.pricing__button:hover {
+  background-color: var(--title-color);
+}
+.pricing__card-active {
+  background-color: var(--first-color);
+  border: 2px solid var(--first-color-light);
+}
+.pricing__card-active .pricing__shape {
+  background-color: var(--first-color-light);
+}
+.pricing__card-active .pricing__title,
+.pricing__card-active .pricing__number,
+.pricing__card-active .pricing__item {
+  color: var(--title-color-black);
+}
+.pricing__card-active .pricing__item i {
+  color: var(--title-color);
+}
