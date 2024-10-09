@@ -804,3 +804,163 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* For large devices */
+@media screen and (min-width: 1023px) {
+  .nav {
+    height: 8rem;
+  }
+  .nav__menu {
+    width: initial;
+  }
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    column-gap: 5rem;
+  }
+  .nav__link {
+    padding: 0;
+  }
+  .section {
+    padding: 12rem 0 0;
+  }
+  .section__subtitle {
+    font-size: 3.2rem;
+  }
+  .home__container {
+    grid-template-columns: repeat(2, max-content);
+    align-items: initial;
+  }
+  .home__title {
+    margin: 1rem 0 2rem;
+  }
+  .home__description {
+    max-width: 45rem;
+    margin-bottom: 3rem;
+  }
+  .home__img {
+    width: 55rem;
+    transform: translateX(-10rem);
+  }
+  .home__triangle {
+    height: 70rem;
+  }
+  .home__triangle-1 {
+    width: 14.5rem;
+  }
+  .home__triangle-2 {
+    width: 34.5rem;
+  }
+  .home__triangle-3 {
+    width: 54.5rem;
+  }
+  .logos {
+    padding: 5.5rem 0 1.5rem;
+  }
+  .logos__img {
+    width: 18rem;
+    transition: transform 0.3s;
+  }
+  .logos__img:hover {
+    transform: scale(1.05);
+  }
+  .choose__overflow {
+    overflow: hidden;
+  }
+  .choose__img {
+    width: 35rem;
+  }
+  .choose__triangle {
+    height: 70rem;
+  }
+  .choose__triangle-1 {
+    width: 54.5rem;
+  }
+  .choose__triangle-2 {
+    width: 34.5rem;
+  }
+  .choose__triangle-3 {
+    width: 14.5rem;
+  }
+  .footer {
+    padding-bottom: 5rem;
+  }
+  .footer__form {
+    flex-direction: row;
+  }
+  .footer__group {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+  }
+  .footer__social {
+    order: 1;
+  }
+  .show-scroll {
+    bottom: 10rem;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .home__data {
+    padding-top: 5rem;
+  }
+  .home__img {
+    width: 60rem;
+    transform: none;
+  }
+  .home__triangle {
+    height: 99rem;
+  }
+  .home__triangle-1 {
+    width: 20.5rem;
+  }
+  .home__triangle-2 {
+    width: 50.5rem;
+  }
+  .home__triangle-3 {
+    width: 70.5rem;
+  }
+  .logos {
+    padding: 3rem 0 0;
+  }
+  .program__container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5rem 0;
+  }
+  .program__description {
+    font-size: var(--normal-font-size);
+  }
+  .choose__container {
+    column-gap: 12rem;
+  }
+  .choose__images {
+    position: relative;
+  }
+  .choose__img {
+    width: 45rem;
+    margin: 0 0 0 auto;
+  }
+  .choose__description {
+    max-width: 45rem;
+  }
+  .pricing__container {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 5rem;
+    align-items: center;
+  }
+  .calculate__description {
+    max-width: 40rem;
+  }
+  .calculate__img {
+    width: 30rem;
+  }
+  .scrollup {
+    right: 5rem;
+    padding: 1rem;
+  }
+}
