@@ -713,3 +713,34 @@ img {
 .show-scroll {
   bottom: 5rem;
 }
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+  .section__titles {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  .home__triangle,
+  .choose__triangle {
+    height: 25rem;
+  }
+  .home__triangle-3,
+  .choose__triangle-1 {
+    width: 30rem;
+  }
+  .choose__img {
+    width: 20rem;
+  }
+  .pricing__container {
+    grid-template-columns: 1fr;
+  }
+  .pricing__card {
+    padding: 2.5rem;
+  }
+  .footer__content {
+    grid-template-columns: 1fr;
+  }
+}
