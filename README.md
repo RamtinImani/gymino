@@ -9,4 +9,7 @@
 
 ### 🪄 `Made With 🤍`
 ---
+## 🚀 Live Demo:
+🔗 [View Demo](https://ramtinimani.github.io/gymino/)
+## 📸 Preview Image:
 ![preview image](/preview.png)
